@@ -1,0 +1,38 @@
+/*Task
+
+You have to print the character, ch , in the first line. Then print s in next line. In the last line print the sentence,sen .
+
+Input Format
+
+First, take a character,c  as input.
+Then take the string,s  as input.
+Lastly, take the sentence sen as input.
+
+Output Format
+
+Print three lines of output. The first line prints the character, c.
+The second line prints the string, s.
+The third line prints the sentence,sen . */
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+
+    char ch;
+    char s[999];
+    char sen[999];
+    
+    scanf("%c" , &ch);
+    printf("%c\n" , ch);
+    scanf("%s" , s);
+    printf("%s\n" , s);
+    scanf("\n");
+    scanf("%[^\n]%*c", sen);
+    printf("%s\n", sen);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
